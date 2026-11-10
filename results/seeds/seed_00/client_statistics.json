@@ -1,0 +1,102 @@
+[
+  {
+    "hospital": "cleveland",
+    "n_rows": 181,
+    "n_observed": {
+      "age": 181,
+      "trestbps": 181,
+      "chol": 181,
+      "thalach": 181,
+      "oldpeak": 181
+    },
+    "sum": {
+      "age": 9980.0,
+      "trestbps": 23888.0,
+      "chol": 44925.0,
+      "thalach": 26960.0,
+      "oldpeak": 186.9
+    },
+    "sum_sq": {
+      "age": 566222.0,
+      "trestbps": 3203912.0,
+      "chol": 11622057.0,
+      "thalach": 4108356.0,
+      "oldpeak": 429.03
+    }
+  },
+  {
+    "hospital": "hungary",
+    "n_rows": 175,
+    "n_observed": {
+      "age": 175,
+      "trestbps": 175,
+      "chol": 163,
+      "thalach": 175,
+      "oldpeak": 175
+    },
+    "sum": {
+      "age": 8405.0,
+      "trestbps": 23184.0,
+      "chol": 40779.0,
+      "thalach": 24216.0,
+      "oldpeak": 106.3
+    },
+    "sum_sq": {
+      "age": 413311.0,
+      "trestbps": 3120284.0,
+      "chol": 10927801.0,
+      "thalach": 3461900.0,
+      "oldpeak": 201.89
+    }
+  },
+  {
+    "hospital": "switzerland",
+    "n_rows": 73,
+    "n_observed": {
+      "age": 73,
+      "trestbps": 72,
+      "chol": 0,
+      "thalach": 73,
+      "oldpeak": 70
+    },
+    "sum": {
+      "age": 3989.0,
+      "trestbps": 9175.0,
+      "chol": 0.0,
+      "thalach": 8924.0,
+      "oldpeak": 43.6
+    },
+    "sum_sq": {
+      "age": 224045.0,
+      "trestbps": 1205625.0,
+      "chol": 0.0,
+      "thalach": 1147252.0,
+      "oldpeak": 92.04
+    }
+  },
+  {
+    "hospital": "va",
+    "n_rows": 120,
+    "n_observed": {
+      "age": 120,
+      "trestbps": 82,
+      "chol": 87,
+      "thalach": 86,
+      "oldpeak": 85
+    },
+    "sum": {
+      "age": 7193.0,
+      "trestbps": 10835.0,
+      "chol": 20830.0,
+      "thalach": 10549.0,
+      "oldpeak": 112.8
+    },
+    "sum_sq": {
+      "age": 438699.0,
+      "trestbps": 1453349.0,
+      "chol": 5207836.0,
+      "thalach": 1333459.0,
+      "oldpeak": 257.14
+    }
+  }
+]

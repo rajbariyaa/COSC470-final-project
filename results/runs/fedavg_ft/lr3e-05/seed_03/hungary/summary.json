@@ -1,0 +1,17 @@
+{
+  "method": "fedavg_ft",
+  "lr": 3e-05,
+  "seed": 3,
+  "hospital": "hungary",
+  "base_fedavg_lr": 0.01,
+  "base_checkpoint": "runs/fedavg/lr1e-02/seed_03",
+  "best_epoch": 10,
+  "best_val_loss": 0.44893768429756165,
+  "budget": {
+    "epochs_trained": 10,
+    "optimizer_steps": 110,
+    "examples_processed": 1760,
+    "n_train": 176,
+    "n_val": 59
+  }
+}

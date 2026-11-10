@@ -1,0 +1,17 @@
+{
+  "method": "fedavg_ft",
+  "lr": 3e-05,
+  "seed": 8,
+  "hospital": "va",
+  "base_fedavg_lr": 0.01,
+  "base_checkpoint": "runs/fedavg/lr1e-02/seed_08",
+  "best_epoch": 10,
+  "best_val_loss": 0.49799832701683044,
+  "budget": {
+    "epochs_trained": 10,
+    "optimizer_steps": 80,
+    "examples_processed": 1190,
+    "n_train": 119,
+    "n_val": 40
+  }
+}

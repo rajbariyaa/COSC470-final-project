@@ -1,0 +1,17 @@
+{
+  "method": "fedavg_ft",
+  "lr": 0.001,
+  "seed": 6,
+  "hospital": "switzerland",
+  "base_fedavg_lr": 0.01,
+  "base_checkpoint": "runs/fedavg/lr1e-02/seed_06",
+  "best_epoch": 10,
+  "best_val_loss": 0.38571634888648987,
+  "budget": {
+    "epochs_trained": 10,
+    "optimizer_steps": 50,
+    "examples_processed": 730,
+    "n_train": 73,
+    "n_val": 25
+  }
+}

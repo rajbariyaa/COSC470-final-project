@@ -1,0 +1,5 @@
+hospital,n_records,n_positive,n_negative,minority_class,n_minority,expected_minority_train,expected_minority_val,expected_minority_test,feasible
+cleveland,303,139,164,positive,139,83.4,27.8,27.8,True
+hungary,294,106,188,positive,106,63.6,21.2,21.2,True
+switzerland,123,115,8,negative,8,4.8,1.6,1.6,True
+va,200,149,51,negative,51,30.6,10.2,10.2,True

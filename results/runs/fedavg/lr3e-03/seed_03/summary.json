@@ -1,0 +1,20 @@
+{
+  "method": "fedavg",
+  "lr": 0.003,
+  "seed": 3,
+  "elapsed_s": 110.51,
+  "best_round": 14,
+  "best_val_loss": 0.42869294624070864,
+  "budget": {
+    "rounds": 50,
+    "local_epochs": 1,
+    "clients_per_round": 4,
+    "optimizer_steps": 1800,
+    "examples_processed": 27500,
+    "n_train": 550,
+    "n_val": 185,
+    "n_parameters": 689,
+    "bytes_training": 1102400,
+    "bytes_evaluation": 551200
+  }
+}

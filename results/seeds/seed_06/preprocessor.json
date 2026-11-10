@@ -1,0 +1,109 @@
+{
+  "mean": {
+    "age": 53.40619307832423,
+    "trestbps": 131.86247544204323,
+    "chol": 250.1549295774648,
+    "thalach": 137.66340508806263,
+    "oldpeak": 0.8626482213438735
+  },
+  "std": {
+    "age": 9.511992137962771,
+    "trestbps": 18.775604562346693,
+    "chol": 61.65236050234797,
+    "thalach": 26.413618977073913,
+    "oldpeak": 1.1320030616512244
+  },
+  "n_observed": {
+    "age": 549,
+    "trestbps": 509,
+    "chol": 426,
+    "thalach": 511,
+    "oldpeak": 506
+  },
+  "contributors": {
+    "cleveland": {
+      "n_rows": 181,
+      "n_observed": {
+        "age": 181,
+        "trestbps": 181,
+        "chol": 181,
+        "thalach": 181,
+        "oldpeak": 181
+      }
+    },
+    "hungary": {
+      "n_rows": 176,
+      "n_observed": {
+        "age": 176,
+        "trestbps": 175,
+        "chol": 161,
+        "thalach": 175,
+        "oldpeak": 176
+      }
+    },
+    "switzerland": {
+      "n_rows": 73,
+      "n_observed": {
+        "age": 73,
+        "trestbps": 71,
+        "chol": 0,
+        "thalach": 72,
+        "oldpeak": 69
+      }
+    },
+    "va": {
+      "n_rows": 119,
+      "n_observed": {
+        "age": 119,
+        "trestbps": 82,
+        "chol": 84,
+        "thalach": 83,
+        "oldpeak": 80
+      }
+    }
+  },
+  "feature_names": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak",
+    "age__missing",
+    "trestbps__missing",
+    "chol__missing",
+    "thalach__missing",
+    "oldpeak__missing",
+    "sex=0",
+    "sex=1",
+    "sex=missing",
+    "cp=1",
+    "cp=2",
+    "cp=3",
+    "cp=4",
+    "cp=missing",
+    "fbs=0",
+    "fbs=1",
+    "fbs=missing",
+    "restecg=0",
+    "restecg=1",
+    "restecg=2",
+    "restecg=missing",
+    "exang=0",
+    "exang=1",
+    "exang=missing",
+    "slope=1",
+    "slope=2",
+    "slope=3",
+    "slope=missing",
+    "ca=0",
+    "ca=1",
+    "ca=2",
+    "ca=3",
+    "ca=missing",
+    "thal=3",
+    "thal=6",
+    "thal=7",
+    "thal=missing"
+  ],
+  "protocol": "federated sufficient statistics (count, sum, sum of squares) from each hospital's training partition; fixed categorical schema"
+}

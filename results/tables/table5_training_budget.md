@@ -1,0 +1,7 @@
+**Training and tuning budgets**
+
+| Method | Learning rates tried | Runs (all configs) | Training per run | Optimizer steps per run | Examples processed per run | Selected epoch/round, median [range] | Model transfer per run (MB) |
+|---|---|---|---|---|---|---|---|
+| Centralized | 4 | 40 | 50 epochs | 1750 | 27475 | 8 [3–26] | 0 (data pooled) |
+| FedAvg | 4 | 40 | 50 rounds × 1 local epoch, 4 clients | 1800 (all clients) | 27475 | 8 [3–18] | 1.65 |
+| FedAvg with local fine-tuning (fine-tuning stage only) | 4 | 160 (10 seeds × 4 hospitals × lr) | ≤10 epochs per hospital | 360 (4 hospitals) | 5495 | 10 [0–10] | 0 (local only) |

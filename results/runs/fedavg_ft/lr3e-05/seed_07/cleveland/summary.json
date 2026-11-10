@@ -1,0 +1,17 @@
+{
+  "method": "fedavg_ft",
+  "lr": 3e-05,
+  "seed": 7,
+  "hospital": "cleveland",
+  "base_fedavg_lr": 0.01,
+  "base_checkpoint": "runs/fedavg/lr1e-02/seed_07",
+  "best_epoch": 1,
+  "best_val_loss": 0.3358306288719177,
+  "budget": {
+    "epochs_trained": 10,
+    "optimizer_steps": 120,
+    "examples_processed": 1810,
+    "n_train": 181,
+    "n_val": 61
+  }
+}

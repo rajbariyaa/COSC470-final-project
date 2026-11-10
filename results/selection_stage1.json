@@ -1,0 +1,33 @@
+{
+  "fedavg_lr": 0.01,
+  "validation_by_lr": [
+    {
+      "lr": 0.0003,
+      "val_loss_mean": 0.5169304007322972,
+      "val_loss_sd": 0.032005204743803035,
+      "n_seeds": 10,
+      "selected": false
+    },
+    {
+      "lr": 0.001,
+      "val_loss_mean": 0.42052437047492763,
+      "val_loss_sd": 0.043607612154273695,
+      "n_seeds": 10,
+      "selected": false
+    },
+    {
+      "lr": 0.003,
+      "val_loss_mean": 0.4151371536169832,
+      "val_loss_sd": 0.04527413297851357,
+      "n_seeds": 10,
+      "selected": false
+    },
+    {
+      "lr": 0.01,
+      "val_loss_mean": 0.41487827622580414,
+      "val_loss_sd": 0.04335926297229501,
+      "n_seeds": 10,
+      "selected": true
+    }
+  ]
+}

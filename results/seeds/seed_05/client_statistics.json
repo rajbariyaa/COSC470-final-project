@@ -1,0 +1,102 @@
+[
+  {
+    "hospital": "cleveland",
+    "n_rows": 181,
+    "n_observed": {
+      "age": 181,
+      "trestbps": 181,
+      "chol": 181,
+      "thalach": 181,
+      "oldpeak": 181
+    },
+    "sum": {
+      "age": 9922.0,
+      "trestbps": 23841.0,
+      "chol": 45263.0,
+      "thalach": 27052.0,
+      "oldpeak": 176.70000000000002
+    },
+    "sum_sq": {
+      "age": 558438.0,
+      "trestbps": 3194647.0,
+      "chol": 11734629.0,
+      "thalach": 4139832.0,
+      "oldpeak": 390.07000000000005
+    }
+  },
+  {
+    "hospital": "hungary",
+    "n_rows": 176,
+    "n_observed": {
+      "age": 176,
+      "trestbps": 175,
+      "chol": 161,
+      "thalach": 175,
+      "oldpeak": 176
+    },
+    "sum": {
+      "age": 8335.0,
+      "trestbps": 23117.0,
+      "chol": 40539.0,
+      "thalach": 24720.0,
+      "oldpeak": 94.3
+    },
+    "sum_sq": {
+      "age": 406149.0,
+      "trestbps": 3106175.0,
+      "chol": 11041369.0,
+      "thalach": 3589164.0,
+      "oldpeak": 167.89
+    }
+  },
+  {
+    "hospital": "switzerland",
+    "n_rows": 73,
+    "n_observed": {
+      "age": 73,
+      "trestbps": 71,
+      "chol": 0,
+      "thalach": 72,
+      "oldpeak": 68
+    },
+    "sum": {
+      "age": 4068.0,
+      "trestbps": 9195.0,
+      "chol": 0.0,
+      "thalach": 8696.0,
+      "oldpeak": 47.900000000000006
+    },
+    "sum_sq": {
+      "age": 232834.0,
+      "trestbps": 1225125.0,
+      "chol": 0.0,
+      "thalach": 1094782.0,
+      "oldpeak": 110.39000000000001
+    }
+  },
+  {
+    "hospital": "va",
+    "n_rows": 119,
+    "n_observed": {
+      "age": 119,
+      "trestbps": 80,
+      "chol": 82,
+      "thalach": 83,
+      "oldpeak": 81
+    },
+    "sum": {
+      "age": 7086.0,
+      "trestbps": 10790.0,
+      "chol": 20226.0,
+      "thalach": 10383.0,
+      "oldpeak": 109.7
+    },
+    "sum_sq": {
+      "age": 428688.0,
+      "trestbps": 1485698.0,
+      "chol": 5248552.0,
+      "thalach": 1342747.0,
+      "oldpeak": 239.39
+    }
+  }
+]

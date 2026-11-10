@@ -1,0 +1,47 @@
+[project]
+name = "fedheart"
+version = "0.1.0"
+description = "Federated vs Centralized Machine Learning for Heart Disease Prediction (UCI, four hospitals)"
+authors = [{ name = "Gulam Uddin" }, { name = "Raj Bariya" }]
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "flwr[simulation]==1.43.0",
+    "torch==2.15.0",
+    "scikit-learn==1.9.1",
+    "pandas==3.1.1",
+    "numpy>=2.0",
+    "scipy>=1.13",
+    "matplotlib>=3.9",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "jupyter>=1.0",
+    "nbconvert>=7.0",
+    "ipykernel>=6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fedheart"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: runs a Flower simulation (Ray); deselect with -m 'not slow'"]
+addopts = "-m 'not slow'"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# The course's original (empty) assignment.ipynb is left untouched.
+extend-exclude = ["assignment.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]

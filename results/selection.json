@@ -1,0 +1,385 @@
+{
+  "locked_at": "2026-11-09T06:40:20+00:00",
+  "criterion": "lowest mean (over seeds) pooled validation BCE; checkpoint epoch/round chosen per seed (and per hospital for fine-tuning) on validation BCE",
+  "threshold": 0.5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "centralized": {
+    "lr": 0.003,
+    "checkpoints": {
+      "0": {
+        "path": "runs/centralized/lr3e-03/seed_00",
+        "best_epoch": 9
+      },
+      "1": {
+        "path": "runs/centralized/lr3e-03/seed_01",
+        "best_epoch": 3
+      },
+      "2": {
+        "path": "runs/centralized/lr3e-03/seed_02",
+        "best_epoch": 13
+      },
+      "3": {
+        "path": "runs/centralized/lr3e-03/seed_03",
+        "best_epoch": 3
+      },
+      "4": {
+        "path": "runs/centralized/lr3e-03/seed_04",
+        "best_epoch": 5
+      },
+      "5": {
+        "path": "runs/centralized/lr3e-03/seed_05",
+        "best_epoch": 21
+      },
+      "6": {
+        "path": "runs/centralized/lr3e-03/seed_06",
+        "best_epoch": 6
+      },
+      "7": {
+        "path": "runs/centralized/lr3e-03/seed_07",
+        "best_epoch": 26
+      },
+      "8": {
+        "path": "runs/centralized/lr3e-03/seed_08",
+        "best_epoch": 9
+      },
+      "9": {
+        "path": "runs/centralized/lr3e-03/seed_09",
+        "best_epoch": 5
+      }
+    }
+  },
+  "fedavg": {
+    "lr": 0.01,
+    "checkpoints": {
+      "0": {
+        "path": "runs/fedavg/lr1e-02/seed_00",
+        "best_round": 9
+      },
+      "1": {
+        "path": "runs/fedavg/lr1e-02/seed_01",
+        "best_round": 3
+      },
+      "2": {
+        "path": "runs/fedavg/lr1e-02/seed_02",
+        "best_round": 5
+      },
+      "3": {
+        "path": "runs/fedavg/lr1e-02/seed_03",
+        "best_round": 5
+      },
+      "4": {
+        "path": "runs/fedavg/lr1e-02/seed_04",
+        "best_round": 5
+      },
+      "5": {
+        "path": "runs/fedavg/lr1e-02/seed_05",
+        "best_round": 18
+      },
+      "6": {
+        "path": "runs/fedavg/lr1e-02/seed_06",
+        "best_round": 9
+      },
+      "7": {
+        "path": "runs/fedavg/lr1e-02/seed_07",
+        "best_round": 12
+      },
+      "8": {
+        "path": "runs/fedavg/lr1e-02/seed_08",
+        "best_round": 10
+      },
+      "9": {
+        "path": "runs/fedavg/lr1e-02/seed_09",
+        "best_round": 7
+      }
+    }
+  },
+  "fedavg_ft": {
+    "lr": 0.001,
+    "base_fedavg_lr": 0.01,
+    "checkpoints": {
+      "0": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_00/cleveland",
+          "best_epoch": 10
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_00/hungary",
+          "best_epoch": 8
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_00/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_00/va",
+          "best_epoch": 0
+        }
+      },
+      "1": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_01/cleveland",
+          "best_epoch": 10
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_01/hungary",
+          "best_epoch": 10
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_01/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_01/va",
+          "best_epoch": 1
+        }
+      },
+      "2": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_02/cleveland",
+          "best_epoch": 10
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_02/hungary",
+          "best_epoch": 10
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_02/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_02/va",
+          "best_epoch": 2
+        }
+      },
+      "3": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_03/cleveland",
+          "best_epoch": 1
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_03/hungary",
+          "best_epoch": 3
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_03/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_03/va",
+          "best_epoch": 2
+        }
+      },
+      "4": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_04/cleveland",
+          "best_epoch": 9
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_04/hungary",
+          "best_epoch": 9
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_04/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_04/va",
+          "best_epoch": 10
+        }
+      },
+      "5": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_05/cleveland",
+          "best_epoch": 6
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_05/hungary",
+          "best_epoch": 9
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_05/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_05/va",
+          "best_epoch": 10
+        }
+      },
+      "6": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_06/cleveland",
+          "best_epoch": 0
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_06/hungary",
+          "best_epoch": 6
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_06/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_06/va",
+          "best_epoch": 0
+        }
+      },
+      "7": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_07/cleveland",
+          "best_epoch": 1
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_07/hungary",
+          "best_epoch": 10
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_07/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_07/va",
+          "best_epoch": 10
+        }
+      },
+      "8": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_08/cleveland",
+          "best_epoch": 0
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_08/hungary",
+          "best_epoch": 10
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_08/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_08/va",
+          "best_epoch": 10
+        }
+      },
+      "9": {
+        "cleveland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_09/cleveland",
+          "best_epoch": 0
+        },
+        "hungary": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_09/hungary",
+          "best_epoch": 10
+        },
+        "switzerland": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_09/switzerland",
+          "best_epoch": 10
+        },
+        "va": {
+          "path": "runs/fedavg_ft/lr1e-03/seed_09/va",
+          "best_epoch": 10
+        }
+      }
+    }
+  },
+  "validation_by_lr": {
+    "centralized": [
+      {
+        "lr": 0.0003,
+        "val_loss_mean": 0.38973885774612427,
+        "val_loss_sd": 0.04314687271773919,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.001,
+        "val_loss_mean": 0.3856230229139328,
+        "val_loss_sd": 0.04628259016904534,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.003,
+        "val_loss_mean": 0.38558168411254884,
+        "val_loss_sd": 0.04630351574968917,
+        "n_seeds": 10,
+        "selected": true
+      },
+      {
+        "lr": 0.01,
+        "val_loss_mean": 0.38982867300510404,
+        "val_loss_sd": 0.046060739172340055,
+        "n_seeds": 10,
+        "selected": false
+      }
+    ],
+    "fedavg": [
+      {
+        "lr": 0.0003,
+        "val_loss_mean": 0.5169304007322972,
+        "val_loss_sd": 0.032005204743803035,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.001,
+        "val_loss_mean": 0.42052437047492763,
+        "val_loss_sd": 0.043607612154273695,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.003,
+        "val_loss_mean": 0.4151371536169832,
+        "val_loss_sd": 0.04527413297851357,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.01,
+        "val_loss_mean": 0.41487827622580414,
+        "val_loss_sd": 0.04335926297229501,
+        "n_seeds": 10,
+        "selected": true
+      }
+    ],
+    "fedavg_ft": [
+      {
+        "lr": 3e-05,
+        "val_loss_mean": 0.4109668932936975,
+        "val_loss_sd": 0.04302072010833893,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.0001,
+        "val_loss_mean": 0.40374728696104123,
+        "val_loss_sd": 0.042575389413340846,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.0003,
+        "val_loss_mean": 0.3912898482293523,
+        "val_loss_sd": 0.042360474996388016,
+        "n_seeds": 10,
+        "selected": false
+      },
+      {
+        "lr": 0.001,
+        "val_loss_mean": 0.37483613577776087,
+        "val_loss_sd": 0.04237106462610907,
+        "n_seeds": 10,
+        "selected": true
+      }
+    ]
+  }
+}

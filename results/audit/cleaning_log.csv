@@ -1,0 +1,17 @@
+hospital,rule,column,n_rows,action,rationale
+cleveland,C2,chol,0,set to missing,chol == 0 is physiologically impossible; treated as not measured
+cleveland,C3,trestbps,0,set to missing,trestbps == 0 is physiologically impossible; treated as not measured
+cleveland,C4,oldpeak,0,retained,negative ST depression is plausible (ST elevation); no documented error code
+cleveland,C6,num,139,num 1-4 -> target 1,binary disease presence
+hungary,C2,chol,0,set to missing,chol == 0 is physiologically impossible; treated as not measured
+hungary,C3,trestbps,0,set to missing,trestbps == 0 is physiologically impossible; treated as not measured
+hungary,C4,oldpeak,0,retained,negative ST depression is plausible (ST elevation); no documented error code
+hungary,C6,num,106,num 1-4 -> target 1,binary disease presence
+switzerland,C2,chol,123,set to missing,chol == 0 is physiologically impossible; treated as not measured
+switzerland,C3,trestbps,0,set to missing,trestbps == 0 is physiologically impossible; treated as not measured
+switzerland,C4,oldpeak,11,retained,negative ST depression is plausible (ST elevation); no documented error code
+switzerland,C6,num,115,num 1-4 -> target 1,binary disease presence
+va,C2,chol,49,set to missing,chol == 0 is physiologically impossible; treated as not measured
+va,C3,trestbps,1,set to missing,trestbps == 0 is physiologically impossible; treated as not measured
+va,C4,oldpeak,1,retained,negative ST depression is plausible (ST elevation); no documented error code
+va,C6,num,149,num 1-4 -> target 1,binary disease presence

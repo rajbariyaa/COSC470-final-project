@@ -1,0 +1,15 @@
+{
+  "method": "centralized",
+  "lr": 0.001,
+  "seed": 4,
+  "elapsed_s": 0.24,
+  "best_epoch": 12,
+  "best_val_loss": 0.37602365016937256,
+  "budget": {
+    "epochs_trained": 50,
+    "optimizer_steps": 1750,
+    "examples_processed": 27500,
+    "n_train": 550,
+    "n_val": 185
+  }
+}

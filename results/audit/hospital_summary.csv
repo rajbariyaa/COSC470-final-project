@@ -1,0 +1,5 @@
+hospital,hospital_label,n_records,n_positive,n_negative,prevalence,num_distribution,n_duplicate_groups,n_extra_duplicate_copies,n_conflicting_label_duplicates,n_complete_records,fully_missing_predictors
+cleveland,Cleveland,303,139,164,0.45874587458745875,0:164;1:55;2:36;3:35;4:13,0,0,0,297,
+hungary,Hungary,294,106,188,0.36054421768707484,0:188;1:106,1,1,0,1,
+switzerland,Switzerland,123,115,8,0.9349593495934959,0:8;1:48;2:32;3:30;4:5,0,0,0,0,chol
+va,VA Long Beach,200,149,51,0.745,0:51;1:56;2:41;3:42;4:10,1,1,0,1,

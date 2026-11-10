@@ -1,0 +1,61 @@
+# Experiment configuration for "Federated vs Centralized Machine Learning for Heart Disease
+# Prediction" (Gulam Uddin, Raj Bariya). Every script reads this file; change values here,
+# not in code. Relative paths are resolved against the project root.
+
+data:
+  base_url: "https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/"
+  raw_dir: data/raw
+  # SHA-256 digests recorded when the files were first retrieved (2026-11-05). A mismatch
+  # stops the pipeline instead of silently training on different data.
+  hospitals:
+    cleveland:
+      file: processed.cleveland.data
+      expected_rows: 303
+      sha256: a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8
+    hungary:
+      file: processed.hungarian.data
+      expected_rows: 294
+      sha256: d1ad108f785768cd3d7e82dc522e6f5a61eea93cccfb3a46ee8076f73fc3d796
+    switzerland:
+      file: processed.switzerland.data
+      expected_rows: 123
+      sha256: 834a405ccf5b66ab4056bb77794adc8df0b7125186454c0a1d002d33c6c3b314
+    va:
+      file: processed.va.data
+      expected_rows: 200
+      sha256: e7c93d8d0d2acdadfa4c5e8de768e2191e7f618b952e29623f1f0d5949ff6b8f
+  documentation_file: heart-disease.names
+
+split:
+  # Stratified within each hospital; exact-duplicate rows are kept together.
+  fractions: {train: 0.6, val: 0.2, test: 0.2}
+
+# Paired seeds: seed s fixes the split, preprocessing fit, initial weights and shuffling for
+# all three methods.
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+model:
+  hidden_units: 16
+
+training:
+  batch_size: 16
+  optimizer: adam
+  # Each grid started with three values around the brief's starting point. Validation loss
+  # selected the largest value of every grid, so each grid was extended by one step
+  # (x3.3) before any test data were accessed; tuning effort stays equal (4 values each).
+  centralized:
+    max_epochs: 50
+    lr_grid: [0.0003, 0.001, 0.003, 0.01]
+  fedavg:
+    num_rounds: 50
+    local_epochs: 1
+    lr_grid: [0.0003, 0.001, 0.003, 0.01]
+  finetune:
+    max_epochs: 10
+    lr_grid: [0.00003, 0.0001, 0.0003, 0.001]
+
+evaluation:
+  threshold: 0.5
+
+paths:
+  results_dir: results

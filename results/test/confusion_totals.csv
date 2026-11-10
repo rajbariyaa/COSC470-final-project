@@ -1,0 +1,16 @@
+method,scope,tn,fp,fn,tp
+centralized,cleveland,285,45,49,231
+centralized,hungary,331,43,61,155
+centralized,switzerland,6,10,12,222
+centralized,va,45,60,51,247
+centralized,pooled,667,158,173,855
+fedavg,cleveland,283,47,45,235
+fedavg,hungary,323,51,47,169
+fedavg,switzerland,9,7,43,191
+fedavg,va,45,60,37,261
+fedavg,pooled,660,165,172,856
+fedavg_ft,cleveland,286,44,49,231
+fedavg_ft,hungary,342,32,66,150
+fedavg_ft,switzerland,5,11,6,228
+fedavg_ft,va,45,60,34,264
+fedavg_ft,pooled,678,147,155,873

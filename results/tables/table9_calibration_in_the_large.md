@@ -1,0 +1,8 @@
+**Observed test prevalence vs mean predicted probability (mean over seeds)**
+
+| Hospital | Observed prevalence (test) | Mean predicted: Centralized | Mean predicted: FedAvg | Mean predicted: FedAvg with local fine-tuning |
+|---|---|---|---|---|
+| Cleveland | 0.459 | 0.474 | 0.482 | 0.478 |
+| Hungary | 0.366 | 0.385 | 0.429 | 0.361 |
+| Switzerland | 0.936 | 0.859 | 0.725 | 0.890 |
+| VA Long Beach | 0.739 | 0.719 | 0.722 | 0.733 |
